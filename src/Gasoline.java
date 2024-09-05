@@ -1,9 +1,10 @@
+package src;
 import java.util.Scanner;
 
 public class Gasoline {
     public static void main(String[] args) {
-        int minutes = 0;
-        double mph = 0.0, mpg = 0.0;
+        int minutes = -1;
+        double mph = -1.0, mpg = -1.0;
         Scanner input = new Scanner(System.in);
 
         while (minutes < 0) {

@@ -1,8 +1,9 @@
+package src;
 import java.util.Scanner;
 
 public class ChangeMaker {
     public static void main(String[] args) {
-        double amount = 0.0;
+        double amount = -1.0;
         int inCents, rem, dollars, qs, ds, ns, ps;
         Scanner input = new Scanner(System.in);
         while (amount < 0) {
