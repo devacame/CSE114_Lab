@@ -24,13 +24,19 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "adopt"
-          java-version: "22.0.2+9"
+          java-version: "22"
 
       - name: Identify modified files
         id: diff-check
         run: |
-          # Get a list of modified files in src, input, and expected directories
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed_files.txt
+          # Check if we have a previous commit to compare against
+          if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            echo "No previous commit found, comparing against all files."
+            git diff --name-only HEAD > changed_files.txt
+          else
+            echo "Comparing with previous commit: ${{ github.event.before }}"
+            git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed_files.txt
+          fi
 
           # Extract changed Java files (if any)
           grep "^src/.*\.java$" changed_files.txt | sed 's/src\/\(.*\)\.java/\1/' > changed_java.txt
