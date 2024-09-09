@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Discount {
     public static void main(String[] args) {
         double fixedPrice = -1.0;
-        int discount = -1, quantity = -1;
+        int discount = 0, quantity = -1;
 
         Scanner input = new Scanner(System.in);
 
