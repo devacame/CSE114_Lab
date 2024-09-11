@@ -1,4 +1,4 @@
-package src;
+package src.Lab2;
 import java.util.Scanner;
 
 public class Celcius2Fahreneheit {
