@@ -10,7 +10,7 @@ public class IsLeapYear {
             year = input.nextInt();
         }
         input.close();
-        if (year % 400 == 0 || (year % 400 != 0 && year % 100 != 0 && year % 4 == 0)) isLeap = true;
+        if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) isLeap = true;
         System.out.println(year + (isLeap ? " is " : " is not ") + "a leap year");
     }
 }
