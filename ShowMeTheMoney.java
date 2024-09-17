@@ -15,6 +15,6 @@ public class ShowMeTheMoney {
         farthings %= 48;
         penny = farthings / 4;
         farthings %= 4;
-        System.out.println(String.format("Pound Sterling %d\nShilling %d\nPenny %d\nFarthings %d", pound, shilling, penny, farthings));
+        System.out.printf("Pound Sterling %d\nShilling %d\nPenny %d\nFarthings %d\n", pound, shilling, penny, farthings);
     }
 }
