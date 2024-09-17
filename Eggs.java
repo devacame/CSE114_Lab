@@ -17,6 +17,6 @@ public class Eggs {
         loose = eggs % 12;
         loosePrice = loose*0.45;
         totalPrice = dozenPrice + loosePrice;
-        System.out.println(String.format("You ordered %d eggs. That's %d dozen(%d x 12 = %d eggs) at $3.25 per dozen (%d x $3.25 = $%.2f) and %d loose eggs at 45 cents (%d x 45c = $%.2f) for a total of $%.2f ($%.2f + $%.2f = $%.2f).", eggs, dozens, dozens, dozens*12, dozens, dozenPrice, loose, loose, loosePrice, totalPrice, dozenPrice, loosePrice, totalPrice));
+        System.out.println(String.format("You ordered %d eggs. That's %d dozen (%d x 12 = %d eggs) at $3.25 per dozen (%d x $3.25 = $%.2f) and %d loose eggs at 45 cents (%d x 45c = $%.2f) for a total of $%.2f ($%.2f + $%.2f = $%.2f).", eggs, dozens, dozens, dozens*12, dozens, dozenPrice, loose, loose, loosePrice, totalPrice, dozenPrice, loosePrice, totalPrice));
     }
 }
