@@ -17,6 +17,7 @@ public class CarInsurance {
         }
         return 1.0;
     }
+
     public static void main(String args[]) {
         double premium =  -1.0;
         int age = -1;
