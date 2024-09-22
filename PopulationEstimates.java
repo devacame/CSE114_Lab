@@ -1,6 +1,6 @@
 // Hyunwoo(Henry) Ahn 116598178
 import java.util.Scanner;
-public class PopulationsEstimates {
+public class PopulationEstimates {
     public static void main(String[] args) {
         int year = -1;
         Scanner input = new Scanner(System.in);
