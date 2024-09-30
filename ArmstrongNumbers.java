@@ -30,5 +30,6 @@ public class ArmstrongNumbers {
             }
             if (tmp == i) System.out.print(i + " ");
         }
+        System.out.println();
     } 
 }

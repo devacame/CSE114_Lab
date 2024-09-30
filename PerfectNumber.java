@@ -22,5 +22,6 @@ public class PerfectNumber {
             if (j*j == i) tmp += j;
             if (i*2 == tmp) System.out.print(i + " ");
         }
+        System.out.println();
     }
 }
