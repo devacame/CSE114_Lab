@@ -1,10 +1,10 @@
 package src.Lab11;
 
 public class RandomString {
-    private static String randomString(int len, char letterCase) {
+    private static String randomString(int len, char ulCase) {
         String ans = "";
         int max, min;
-        switch (letterCase) {
+        switch (ulCase) {
             case 'u':
             case 'U':
                 max = 'Z';
