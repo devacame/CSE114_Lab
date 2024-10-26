@@ -1,6 +1,6 @@
 package Lab15;
 
-class Rectangle {
+public class Rectangle {
     private double width = 1, height = 1;
     private String color = "white";
 
@@ -44,9 +44,7 @@ class Rectangle {
     public double getPerimeter() {
         return 2 * (width + height);
     }
-}
 
-class RectangleTest {
     public static void main(String[] args) {
         Rectangle r1 = new Rectangle(4, 40);
         Rectangle r2 = new Rectangle();
