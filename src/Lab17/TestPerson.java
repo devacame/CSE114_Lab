@@ -12,10 +12,10 @@ public class TestPerson {
                 1_000_000_001, new Date(), "Mondays and Wednesdays 8:30-10am", 5);
         Staff st = new Staff("Rn Nm", "Rm Add", "000-000-0004", "rnnm@exmaple.com", 100, 1_000_000_000, new Date(),
                 "History");
-        System.out.println(p.toString());
-        System.out.println(s.toString());
-        System.out.println(e.toString());
-        System.out.println(f.toString());
-        System.out.println(st.toString());
+        System.out.println(p);
+        System.out.println(s);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(st);
     }
 }

@@ -49,6 +49,6 @@ public class Triangle extends GeometricObject {
 
     public static void main(String[] args) {
         Triangle t = new Triangle(1, 1.5, 1, "yellow", true); 
-        System.out.println(t.toString());
+        System.out.println(t);
     }
 }
