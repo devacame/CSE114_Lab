@@ -1,8 +1,12 @@
 package Lab24;
 
+import java.util.Scanner;
+
 public class ReverseDisplay {
     public static void main(String[] args) {
-        reverseDisplay(12345);
+        Scanner input = new Scanner(System.in);
+        reverseDisplay(input.nextInt());
+        input.close();
     }
 
     public static void reverseDisplay(int value) {

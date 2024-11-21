@@ -1,8 +1,12 @@
 package Lab24;
 
+import java.util.Scanner;
+
 public class SumDigits {
     public static void main(String[] args) {
-        System.out.println(sumDigits(234));
+        Scanner input = new Scanner(System.in);
+        System.out.println(sumDigits(input.nextInt()));
+        input.close();
     }
 
     public static int sumDigits(int n) {

@@ -1,8 +1,12 @@
 package Lab24;
 
+import java.util.Scanner;
+
 public class ReverseNumber {
     public static void main(String[] args) {
-        System.out.println(reverse(12345));
+        Scanner input = new Scanner(System.in);
+        System.out.println(reverse(input.nextInt()));
+        input.close();
     }
 
     public static int reverse(int value) {
